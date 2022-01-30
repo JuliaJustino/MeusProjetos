@@ -1,0 +1,420 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@font-face {
+    font-family: 'Dancing Script', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+    font-family: 'Comfortaa', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+    font-family: 'Dongle', sans-serif;
+    src: ('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.788)), url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: inline-block;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    font-weight: lighter;
+    font-size: 28pt;
+    overflow-x: hidden;
+    margin-left: 0%;
+}
+h3{
+    font-family: 'Bitter', serif;
+    margin-bottom: 0%;
+    text-align: center;
+}
+p{
+    font-family: 'Bitter', serif;
+    color: black;
+    font-size: 15pt;
+    text-indent: 50px;
+    text-align: justify;
+    margin-bottom: 2px;  
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.685)), url(https://cdn.pixabay.com/photo/2021/01/05/06/40/boat-5889919_960_720.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 10px;
+    transition: 1.5s;
+}
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color: rgb(0, 255, 55);
+    border-radius: 10%;
+    text-decoration: none;
+    font-size: 20pt;
+    margin-right: 0%;
+    transition: 1s;
+}
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+}
+div#bemVindo{
+    position:static;   
+    margin-left: -36px;
+    margin-top: -450px;
+    margin-bottom: 210px; 
+    width: 100vw;
+    height: 30vh;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.301);
+    display: inline-block;
+}
+p#slogan{
+    font-size: 25pt;
+    text-align:center;
+    font-family: 'Comfortaa', cursive;
+    animation: backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+    color: white;
+}
+h1#slogan{
+    font-size: 55pt;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    animation:fadeInDownBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+    color: white;
+}
+#servicos{
+    background: white;
+    width: 100vw;
+    height: 110vh;
+    margin-left: -40px;    
+}
+h2#titulosPaginas{
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 1px #606060 solid;
+    color: black;
+    width: 55%;
+    margin-left: 22%;
+    font-size: 40pt;
+    text-align: center;
+    animation:fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+#gifs{
+    height: 50px;
+    width: 50px;
+    margin-left:85%;
+    margin-top: 5%;
+    
+}
+#duvidas{
+    float: left;
+    margin-top: -50px;
+    box-shadow:  1px 1px 1px 2px rgb(31, 31, 31);
+    border-radius: 50%;
+}
+#textoDuvidas{
+    width: 55%;
+    text-align: justify;
+    margin-left: 42%;
+    animation:fadeInTopRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+#blog{
+    width: 150vw;
+    height: 100vh;
+    margin-left: -40px;
+    margin-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.801),rgba(0, 0, 0, 0.904)), url(https://cdn.pixabay.com/photo/2021/11/25/14/37/detail-6823782_960_720.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#textoBlog{
+    width: 70%;
+    height: 35vh;
+    margin-top: 50px;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    display: inline-block;
+    animation:fadeInTopLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+.div{
+    display: inline-block;
+}
+#cards{
+    width: 100%;
+    height: 180vh;
+    display: inline-block;
+    animation:fadeInTopRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+#espaco{
+    width: 30%;
+    height: 60%;
+    display: inline-block;
+    margin-left: 30px;
+    margin-left: -105px;
+}
+#conteudo{
+    width: 40vw;
+    height: 75%;
+    background:url(../img/tecnologiaCard.jpg);
+    display: inline-block;
+    transition: 1s;
+    margin-left: -85px;
+    box-shadow:  1px 1px 3px white;
+}
+#imagem{
+    width: 35vw;
+    height: 75%;
+    margin-left: -83px;
+    background:url(../img/tecnologiaCard.jpg);
+    display: inline-block;
+    margin-top: -81vh;
+}
+#txtBlog{
+    width: 50vw;
+    height: 50%;
+    margin-left: 40vw;
+    margin-top: -520px;
+
+}
+#txtBlog p{
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    font-size: 12pt;
+}
+#txtBlog h2{
+    color: white;
+}
+
+#quemSomos{
+    width: 100vw;
+    height: 120vh;
+    margin-left: 0px;
+    background: rgba(131, 250, 125, 0.342);
+    display:inline-block;
+    margin-bottom: 2%;
+}
+#conteudoQuemSomos{
+    width: 90vw;
+    margin-top: 5%;
+    height: auto;
+    margin-left: 50px;
+    background: white;
+    display: inline-block;
+    box-shadow:  1px 1px 10px rgb(0, 0, 0);
+    animation:fadeInUpBig; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+#imgQuemSomos{
+    float: right;
+    margin-top: -270px;
+}
+#txtQuemSomos{
+    width: 50%;
+    height: auto;
+    margin-left: 5%;
+}
+#txtQuemsomos h2{
+    margin-top: 15px;
+    margin-bottom:10%;
+}
+#contato{
+    width: 100vw;
+    height: 88vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.897),rgba(0, 0, 0, 0.904)), url(https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#mapa{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+#espacoContato h2{
+    color: white;
+}
+#telefone{
+    width: 30vw;
+    height: auto;
+    background: white;
+    margin-left: 65%;
+    margin-top: -30%;
+    border-radius: 2%;
+    display: inline-block;
+    box-shadow:  1px 1px 10px rgb(255, 255, 255);
+    animation:bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+}
+#email{
+    width: 30vw;
+    height: auto;
+    background: rgb(255, 255, 255);
+    margin-left: 65%;
+    margin-top: -19%;
+    border-radius: 2%;
+    display: inline-block;
+    box-shadow:  1px 1px 10px rgb(255, 255, 255);
+    animation:bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 6s; /* don't forget to set a duration! */
+}
+#redesocial{
+    width: 30vw;
+    height: 18vh;
+    background: rgb(255, 255, 255);
+    margin-left: 65%;
+    margin-top: -8%;
+    display: inline-block;
+    border-radius: 2%;
+    box-shadow:  1px 1px 10px rgb(255, 255, 255);
+    animation:bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 7s; /* don't forget to set a duration! */
+}
+#telefone h3{
+     margin-top: -15%; 
+     font-family: 'Dancing Script', cursive;
+    border-bottom: 1px #606060 solid;
+    color: black;
+    width: 75%;
+    margin-left: 0%;
+    font-size: 20pt;
+    text-align: center;
+}
+#telefone p{
+    text-align: justify;
+    font-size: 15pt;
+}
+
+#email h3{
+    margin-top: -15%; 
+    font-family: 'Dancing Script', cursive;
+   border-bottom: 1px #606060 solid;
+   color: black;
+   width: 75%;
+   margin-left: 0%;
+   font-size: 20pt;
+   text-align: center;
+}
+#email p{
+   text-align: justify;
+   font-size: 15pt;
+}
+
+#redeSocial h3{
+    margin-top: -15%; 
+    font-family: 'Dancing Script', cursive;
+   border-bottom: 1px #606060 solid;
+   color: black;
+   width: 75%;
+   margin-left: 0%;
+   margin-bottom: 20px;
+   font-size: 20pt;
+   text-align: center;
+}
+#redeSocial p{
+   text-align: justify;
+   font-size: 15pt;
+   margin-top: -5%;
+}
+#redeSocial img#redes{
+  width: 3vw;
+  height: 5vh;
+  margin-left: 8px;
+  display: inline-block;
+}
+iframe{
+    border-radius: 2%;
+    animation:bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 4s; /* don't forget to set a duration! */
+}
